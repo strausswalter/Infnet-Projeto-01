@@ -5,6 +5,9 @@
 @import url('medias.css');
 
 
+
+
+
 #mainNav{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -158,9 +161,31 @@ nav div.main_list ul li a button:hover {
     width: 100%;
     height: 100vh;
     background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
+    /* background-color: aqua; */
     background-position: center top;
 	background-size:cover;
 }
+
+
+
+/* PAGINA EM CONSTRUÇÃO */
+.home{
+    /* position: relative; */
+
+
+/* O código abaixo está dando erros de responsividade */
+/* }
+.home #pagConstrucao h1{
+position: absolute;
+left: 50vw;
+top: 50vh;
+transform: translate(-50%, -50%);
+font-size: 8rem;
+color:gold
+} */
+
+
+
 
 
 /* NavTrigger Hamburguer*/
@@ -381,6 +406,39 @@ nav div.show_list {
 
 
 
+/* Footer NÃO OPERACIONAL AINDA*/
+
+footer.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  footer.footer .social-link {
+    display: block;
+    text-decoration: none;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4.3rem;
+    font-size: 1.5rem;
+    background-color: #1D809F;
+    transition: background-color 0.15s ease-in-out;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  footer.footer .social-link:hover {
+    background-color: #155d74;
+    text-decoration: none;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
 /*----------------------------------------------
 Media Queries
 ----------------------------------------------*/
@@ -393,7 +451,9 @@ Media Queries
 
 /*Para Dispositivos de 980px ou menos*/
 @media screen and (max-width: 980px){
-	
+    .map {
+        height: 75%;
+      }
 }
 
 /*Para Dispositivos de 768px ou menos*/
