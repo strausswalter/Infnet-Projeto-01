@@ -4,9 +4,10 @@
 @import url('footer.css');
 @import url('medias.css');
 
-
-
-
+body{
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+}
 
 #mainNav{
     padding-top: 1.5rem;
@@ -22,24 +23,11 @@
 /* Navbar shrink */
 
 #mainNav.changeNavbar {
-
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
-
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-
-
-    /* padding: 0; */
-    /* background-color: #111; */
 }  
-
-
-
-
-
-
-
 
 
 
@@ -50,15 +38,6 @@ nav img{
     position: relative;
     top: -1px; /* A imagem estava com texto desalinhada com o texto do menu */
 }
-
-
-
-
-
-
-
-
-
 
 
 /* 
@@ -116,8 +95,13 @@ nav div.main_list ul {
     padding: 0;
 } */
 
+
+
+
+
 /* MELHORAR FLEX ITENS !!!!!!! */
 /* Melhorar Flex itens */
+
 /* nav div.main_list ul li {
     width: auto;
     height: 65px;
@@ -169,8 +153,8 @@ nav div.main_list ul li a button:hover {
 
 
 /* PAGINA EM CONSTRUÇÃO */
-.home{
-    /* position: relative; */
+/*.home{
+     position: relative; */
 
 
 /* O código abaixo está dando erros de responsividade */
@@ -271,7 +255,7 @@ nav div.show_list {
 
 
 /* Animação */
-
+/* 
 @-webkit-keyframes inM {
     50% {
         -webkit-transform: rotate(0deg);
@@ -402,38 +386,22 @@ nav div.show_list {
     100% {
         transform: translateY(-9px) rotate(135deg);
     }
+} */
+
+/* footer */
+footer {
+    /* background: #272833; */
+    /* padding: 6em 0; */
+    text-align: center;
 }
-
-
-
-/* Footer NÃO OPERACIONAL AINDA*/
-
-footer.footer {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-  footer.footer .social-link {
-    display: block;
-    text-decoration: none;
-    height: 4rem;
-    width: 4rem;
-    line-height: 4.3rem;
-    font-size: 1.5rem;
-    background-color: #1D809F;
-    transition: background-color 0.15s ease-in-out;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-  }
-  footer.footer .social-link:hover {
-    background-color: #155d74;
-    text-decoration: none;
-  }
-  
-
-
-
-
-
-
+footer i{
+    /* font-size: 2.7rem; */
+    font-size: 5vw;
+    /* padding-right: 15px; */
+    color: #272833 !important;
+    text-shadow: 1px 0 0 rgb(255 255 255 / 50%), -1px 0 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(255 255 255 / 50%), 0 -1px 0 rgb(255 255 255 / 50%);
+    padding: 0 15px;
+}
 
 
 
@@ -447,7 +415,7 @@ Media Queries
 /*Para Dispositivos de 1024px ou menos*/
 @media screen and (max-width: 1024px){
 
-
+}
 
 /*Para Dispositivos de 980px ou menos*/
 @media screen and (max-width: 980px){
@@ -458,13 +426,17 @@ Media Queries
 
 /*Para Dispositivos de 768px ou menos*/
 @media screen and (max-width: 768px){
-	
+	footer i{
+        padding: 0 10px;
+    }
 
 }
 
 /*Para Dispositivos de 480px ou menos*/
 @media screen and (max-width: 480px){
-	
+    footer i{
+        padding: 0 5px;
+    }
 }
 
 @media screen and (max-width: 420px){
@@ -473,5 +445,7 @@ Media Queries
 
 /*Para Dispositivos de 320px ou menos*/
 @media screen and (max-width: 320px){	
-	
-}
+    footer i{
+        padding: 0;
+    }
+};
