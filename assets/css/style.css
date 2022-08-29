@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 
-@import url('header.css');
-@import url('footer.css');
+
 @import url('medias.css');
 
 body{
@@ -171,61 +170,3 @@ footer i{
 
 
 
-
-
-/*----------------------------------------------
-Media Queries
-----------------------------------------------*/
-
-
-/*Para Dispositivos de 1024px ou menos*/
-@media screen and (max-width: 1024px){
-
-}
-
-/*Para Dispositivos de 980px ou menos*/
-@media screen and (max-width: 980px){
-    .map {
-        height: 75%;
-      }
-      footer i{
-        font-size: 1.8rem;
-    }
-}
-
-/*Para Dispositivos de 768px ou menos*/
-@media screen and (max-width: 768px){
-	footer i{
-        padding: 0 10px;
-    }
-    footer i{
-        font-size: 1.6rem;
-    }
-
-}
-
-/*Para Dispositivos de 480px ou menos*/
-@media screen and (max-width: 480px){
-    footer i{
-        padding: 0 5px;
-    }
-    footer i{
-        font-size: 1.6rem;
-    }
-}
-
-@media screen and (max-width: 420px){
-    footer p{
-        font-size: 0.8rem;
-    }
-}
-
-/*Para Dispositivos de 320px ou menos*/
-@media screen and (max-width: 320px){	
-    footer i{
-        padding: 0;
-    }
-    footer i{
-        font-size: 1.2rem;
-    }
-};
