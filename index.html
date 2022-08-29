@@ -13,10 +13,18 @@
 </head>
 
 <body>
+  <!-- Spinner Start -->
+  <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-grow text-primary" role="status"></div>
+  </div> -->
+  <!-- Spinner End -->
+
 
   <!-- Nabbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Offcanvas navbar large" id="mainNav">
-    <div class="container-fluid">
+
+  <div class="container-fluid">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Offcanvas navbar large" id="mainNav">
       <a class="navbar-brand" href="#"><img src="./assets/img/logo.webp" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
         aria-controls="offcanvasNavbar2">
@@ -29,13 +37,16 @@
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
             aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body" id="mainMenu">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Serviços</a>
+              <a class="nav-link" href="#servicos">Serviços</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Clientes</a>
@@ -44,15 +55,12 @@
               <a class="nav-link" href="#">Fotos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
+              <a class="nav-link" href="#contato">Contato</a>
             </li>
             <li class="nav-item">
               <a class="nav-link btn btn-outline-light me-2 text-nowrap buttonAbrirCham"
                 href="http://trackservicedesk.dyndns.info/glpi/">Abrir chamado</a>
             </li>
-
-
-
             <!-- Dropbown menu (para possiveis alterações futuras)-->
             <!-- <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -68,57 +76,576 @@
                   </ul>
                 </li> -->
             <!-- Termino do Dropbown menu (para possiveis alterações futuras)-->
-
           </ul>
         </div>
       </div>
-    </div>
-  </nav><!-- fim navbar -->
+    </nav><!-- fim navbar -->
+  </div><!-- Fim div Container -->
 
-  <!-- Home -->
+
   <main>
+    <!-- Home / Banner statico-->
     <section class="home">
-      <div id="pagConstrucao">
-        <!-- <h1>PAGINA EM CONSTRUÇÃO</h1> -->
+      <div>
+      </div>
+    </section>
+    <!-- fim Home / Banner statico-->
+
+    <!-- Home / Banner Carousel-->
+    <section>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="7000">
+            <img src="./assets/img/assistenciaTecnica.webp" class="d-block w-00" alt="...">
+            <div class="carousel-caption d-none d-md-block text-bg-light opacity-50 rounded-3">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="7000">
+            <img src="./assets/img/Infra.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-bg-light opacity-50 rounded-3">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="7000">
+            <img src="./assets/img/controleAcesso.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-bg-light opacity-50 rounded-3">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section><!-- Fim Banner Carousel -->
+
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Serviços</h1>
+          <p class="lead text-muted">Alguns dos nossos serviços</p>
+        </div>
       </div>
     </section>
 
-  </main>
+    <!-- Cards -->
+    <section>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                dy=".3em">Image
+                cap</text>
+            </svg>
 
-  
+            <div class="card-body">
+              <h4>Outsourcing de TI</h4>
+              <p class="card-text">Terceirização de TI é estratégia vantajosa para sua empresa aumentar a produtividade,
+                otimizar o desempenho, agilizar processos e elevar a qualidade dos serviços prestados por uma empresa.
+                Atendimento local com suporte de TI integral.</p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                dy=".3em">Image
+                cap</text>
+            </svg>
+
+            <div class="card-body">
+              <h4>Suporte Técnico</h4>
+              <p class="card-text">Suporte técnico é responsabilidade do departamento de TI em manter a estabilidade dos
+                serviços prestados, oferecendo apoio, esclarecimentos, manutenções preventivas e corretivas remota e
+                presencial. Temos vários planos que se adaptam as necessidades dos clientes.</p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                dy=".3em">Image
+                cap</text>
+            </svg>
+
+            <div class="card-body">
+              <h4>Assistência Técnica</h4>
+              <p class="card-text">Realizamos manutenção preventiva e corretiva em servidores, micro computadores e
+                notebooks e equipamentos de informática em geral, contamos com uma equipe de profissionais qualificados
+                para resolver seus problemas de microinformatica.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                dy=".3em">Image
+                cap</text>
+            </svg>
+
+            <div class="card-body">
+              <h4>Data Center e Servidores</h4>
+              <p class="card-text">A infraestrutura de TI consiste nos componentes e serviços que fornecem a base para
+                sustentar todos os sistemas de informação de uma organização. Temos soluções completas de projetos de
+                TI, desde cabeamento estruturado até implantação de Firewall e Servidores.</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                dy=".3em">Image
+                cap</text>
+            </svg>
+
+            <div class="card-body">
+              <h4>Controle de Ponto Eletrônico</h4>
+              <p class="card-text">Relógios de ponto eletrônico homologado pelo MTE e certificado pelo modelos, com
+                diferentes combinações de leitores tela touch screen, possui diversos recursos e possibilidades de
+                configuração. Aplicando-se a empresas de todos os portes.</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                dy=".3em">Image
+                cap</text>
+            </svg>
+
+            <div class="card-body">
+              <h4>Controle de Acesso</h4>
+              <p class="card-text">As catracas unem beleza e tecnologia para o controle de acesso a locais como
+                recepções e portarias. Ela pode ser customizada de acordo com a necessidade do cliente e cada projeto,
+                sendo possível escolher o tipo de leitor de identificação e adicionar cofre coletor de cartões.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                dy=".3em">Image
+                cap</text>
+            </svg>
+
+            <div class="card-body">
+              <h4>Câmeras de Segurança - CFTV</h4>
+              <p class="card-text">Os projetos de câmeras de segurança são utilizados para monitoramento e vigilância,
+                visando incidentes de segurança, vandalismo, acessos aos escritórios, fábricas, residencias,
+                condomínios e empresas o comportamento indevido e outras ocorrências.</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                dy=".3em">Image
+                cap</text>
+            </svg>
+
+            <div class="card-body">
+              <h4>Monitoramento NOC</h4>
+              <p class="card-text">Sua infraestrutura de TI monitorada por nossa equipe em tempo real, permitindo a
+                ação proativa diante de eventuais falhas. Redução gradativa dos custos com pessoal e infraestrutura,
+                além disso sua empresa conta com um suporte e atendimento dedicado.</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                dy=".3em">Image
+                cap</text>
+            </svg>
+
+            <div class="card-body">
+              <h4>Venda de equipamentos</h4>
+              <p class="card-text">Trabalhamos com as principais marcas do mercado e com os maiores distribuidores do
+                Brasil, revendemos equipamentos com garantia e ainda instalamos em sua empresa. Entre em contato com
+                nosso departamento comercial e consulte nossas condições.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards Opção 2 -->
+    <h1>CARDS OPAÇÃO 2</h1>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 mx-5">
+      <div class="col">
+        <div class="card h-100">
+          <div id="imagemTeste">
+            <img src="./assets/img/OutsourcingTrackServices.jpeg" alt="" width="100%" data-bs-toggle="modal"
+              data-bs-target="#OutsourcingModal">
+          </div>
+
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image
+              cap</text>
+          </svg>
 
 
-  <div style="height: 1000px"></div>
+
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image
+              cap</text>
+          </svg>
 
 
 
-        <!-- Map-->
-        <div class="map" id="contact">
-          <!-- <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe> -->
-          <!-- <iframe src="" frameborder="0"></iframe> -->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14745.27659061716!2d-41.9163024!3d-22.492206!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8db3ec8d5bb3683!2sTrack%20Services!5e0!3m2!1spt-BR!2sbr!4v1661171802685!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <br />
-          <!-- <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small> -->
+        </div>
       </div>
 
+      <div class="col">
+        <div class="card h-100">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image
+              cap</text>
+          </svg>
+
+
+
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image
+              cap</text>
+          </svg>
+
+
+
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image
+              cap</text>
+          </svg>
+
+
+
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image
+              cap</text>
+          </svg>
+
+
+
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image
+              cap</text>
+          </svg>
+
+
+
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image
+              cap</text>
+          </svg>
+
+
+
+        </div>
+      </div>
+    </div>
 
 
 
 
-  <!-- Footer NÃO OPERACIONAL AINDA-->
+
+    <!-- <section class="bg-light text-center py-5 my-5">
+        <h1 class="h1">Serviços</h1>
+      </section> -->
+
+    <!-- Fim Serviços -->
 
 
+
+
+
+
+    <!-- Modal Serviços-->
+    <div class="modal fade" id="OutsourcingModal" tabindex="-1" aria-labelledby="OutsourcingModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <!-- testar "modal-dialog-centered" na linha acima!!!!!!!!!!!!!!!!!!!! -->
+        <!-- testar modal-lg na linha acima   +  modal-fullscreen-sm-down modal-fullscreen-md-down modal-fullscreen-lg-down !!!!!!!!!!!!!!!!!!! -->
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5 class="modal-title" id="OutsourcingModalLabel"></h5>
+            <div class="card h-100">
+              <img src="./assets/img/OutsourcingTrackServices.jpeg" alt="" width="100%" data-bs-toggle="modal"
+                data-bs-target="#OutsourcingModal">
+
+
+              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image
+              cap</text>
+          </svg> -->
+
+              <div class="card-body">
+                <h4>Outsourcing de TI</h4>
+                <p class="card-text">Terceirização de TI é estratégia vantajosa para sua empresa aumentar a
+                  produtividade,
+                  otimizar o desempenho, agilizar processos e elevar a qualidade dos serviços prestados por uma empresa.
+                  Atendimento local com suporte de TI integral.</p>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Mais detalhes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- ================================================================== -->
+
+
+  </main>
+
+
+
+
+  <!-- Map-->
+  <div class="map" id="contact">
+    <!-- <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe> -->
+    <!-- <iframe src="" frameborder="0"></iframe> -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14745.27659061716!2d-41.9163024!3d-22.492206!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8db3ec8d5bb3683!2sTrack%20Services!5e0!3m2!1spt-BR!2sbr!4v1661171802685!5m2!1spt-BR!2sbr"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br />
+    <!-- <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small> -->
+  </div>
+
+
+
+  <!-- Contact-->
+  <section id="contato" class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Contato</h1>
+        <p class="lead text-muted">Envie a sua mensagem</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    
+      <!-- * * * * * * * * * * * * * * *-->
+      <!-- * * SB Forms Contact Form * *-->
+      <!-- * * * * * * * * * * * * * * *-->
+      <!-- This form is pre-integrated with SB Forms.-->
+      <!-- To make this form functional, sign up at-->
+      <!-- https://startbootstrap.com/solution/contact-forms-->
+      <!-- to get an API token!-->
+      <form id="contactForm"
+        action="https://gmail.us9.list-manage.com/subscribe/post?u=2fd74db8d1d9bee479f547391&amp;id=b58aaa6938&amp;f_id=00c600e1f0"
+        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
+        <div class="row align-items-stretch mb-5">
+          <div class="col-md-6">
+            <div class="form-group">
+              <!-- Name input-->
+              <input class="form-control" id="name" name="NAME" type="text" placeholder="Digite o seu nome *" />
+              <!-- <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div> -->
+            </div>
+            <div class="form-group">
+              <!-- Email address input-->
+              <input class="form-control" id="email" name="EMAIL" type="email" placeholder="Digite o seu e-mail *" />
+              <!-- <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div> -->
+              <!-- <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div> -->
+            </div>
+            <div class="form-group mb-md-0">
+              <!-- Phone number input-->
+              <input class="form-control" id="phone" name="TELEFONE" type="tel" placeholder="Digite o seu telefone" />
+              <!-- <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div> -->
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group form-group-textarea mb-md-0">
+              <!-- Message input-->
+              <textarea class="form-control" name="MENSAGEM" id="message"
+                placeholder="Digite a sua mensagem"></textarea>
+              <!-- <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div> -->
+            </div>
+          </div>
+        </div>
+        <!-- Submit success message-->
+        <!---->
+        <!-- This is what your users will see when the form-->
+        <!-- has successfully submitted-->
+        <div class="d-none" id="submitSuccessMessage">
+          <div class="text-center text-white mb-3">
+            <div class="fw-bolder">Form submission successful!</div>
+            To activate this form, sign up at
+            <br />
+            <a
+              href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+          </div>
+        </div>
+        <!-- Submit error message-->
+        <!---->
+        <!-- This is what your users will see when there is-->
+        <!-- an error submitting the form-->
+        <div class="d-none" id="submitErrorMessage">
+          <div class="text-center text-danger mb-3">Error sending message!</div>
+        </div>
+        <!-- Submit Button-->
+        <div class="text-center"><button class="btn btn-outline-light text-nowrap  btn-xl py-2 px-5" id="submitButton"
+            type="submit">Enviar</button></div>
+      </form>
+  
+  </section><!-- TERMINO FORMULARIO AGENCY -->
+
+
+
+
+  <!-- Footer-->
   <div class="container">
     <footer class="py-3 my-1">
       <ul class="nav justify-content-evenly border-bottom pb-3 mb-3">
-        <li class="ms-auto nav-item"><a href="#" class="nav-link text-muted"><i class="fa-brands fa-facebook-f"></i></a></li>
-        <li class="nav-item"><a href="#" class="nav-link text-muted"><i class="fa-brands fa-instagram"></i></a></li>
-        <li class="nav-item"><a href="#" class="nav-link text-muted"><i class="fa-solid fa-envelope"></i></a></li>
-        <li class="me-auto nav-item"><a href="#" class="nav-link text-muted"><i class="fa-brands fa-whatsapp"></i></i></a></li>
+        <li class="ms-auto nav-item"><a href="https://www.facebook.com/trackservices" class="nav-link text-muted"><i
+              class="fa-brands fa-facebook-f"></i></a></li>
+        <li class="nav-item"><a href="https://www.instagram.com/trackservices/" class="nav-link text-muted"><i
+              class="fa-brands fa-instagram"></i></a></li>
+        <li class="nav-item"><a href="mailto:strausswalter@gmail.com" target="_blank" class="nav-link text-muted"><i
+              class="fa-solid fa-envelope"></i></a></li>
+        <li class="me-auto nav-item"><a href="https://api.whatsapp.com/send?phone=5521989211938" target="_blank"
+            class="nav-link text-muted"><i class="fa-brands fa-whatsapp"></i></a></li>
       </ul>
-      <p class="text-center text-muted">Copyright © 2022. Todos os direitos reservados.</p>
+      <p class="text-center text-muted">© 2022 by Hackbit Tecnologia. Uma empresa do Grupo Track Services.</p>
     </footer>
-  </div>
+  </div><!-- Fim Footer-->
+
+
+
+
+
+
+  <!-- ================================================================== -->
+
+
+
+
+
+  <!-- <div style="height: 1000px"></div> -->
+
 
 
 
