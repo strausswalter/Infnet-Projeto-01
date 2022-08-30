@@ -24,39 +24,42 @@
 
   <div class="container-fluid">
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Offcanvas navbar large" id="mainNav">
-      <a class="navbar-brand" href="#"><img src="./assets/img/logo.webp" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
-        aria-controls="offcanvasNavbar2">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
-        aria-labelledby="offcanvasNavbar2Label">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbar2Label"><img src="./assets/img/logo.webp" alt=""></h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" aria-label="Offcanvas navbar large" id="mainNav">
+      <div class="container-xl">
+        <div id="logo">
+          <a class="navbar-brand" href="#"><img src="./assets/img/logo.webp" alt=""></a>
         </div>
-        <div class="offcanvas-body" id="mainMenu">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#sobre">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#servicos">Serviços</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contato">Contato</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-outline-light me-2 text-nowrap buttonAbrirCham"
-                href="http://trackservicedesk.dyndns.info/glpi/">Abrir chamado</a>
-            </li>
-            <!-- Dropbown menu (para possiveis alterações futuras)-->
-            <!-- <li class="nav-item dropdown">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label"><img src="./assets/img/logo.webp" alt=""></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" id="mainMenu">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicos">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-outline-light me-2 text-nowrap buttonAbrirCham"
+                  href="http://trackservicedesk.dyndns.info/glpi/">Abrir chamado</a>
+              </li>
+              <!-- Dropbown menu (para possiveis alterações futuras)-->
+              <!-- <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Dropdown
                   </a>
@@ -69,17 +72,19 @@
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li> -->
-            <!-- Termino do Dropbown menu (para possiveis alterações futuras)-->
-          </ul>
+              <!-- Termino do Dropbown menu (para possiveis alterações futuras)-->
+            </ul>
+          </div>
         </div>
       </div>
     </nav><!-- fim navbar -->
+
   </div><!-- Fim div Container -->
 
 
   <main>
     <!-- Home / Banner statico-->
-  <!--   <section class="home">
+    <!--   <section class="home">
       <div>
       </div>
     </section>-->
@@ -132,7 +137,7 @@
       </div>
     </section><!-- Fim Banner Carousel -->
 
-	<!-- Sobre -->
+    <!-- Sobre -->
     <section id="sobre" class="pt-5 text-center container">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
@@ -141,21 +146,163 @@
         </div>
       </div>
     </section>
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
+    <!-- Opção de layout não escolhido -->
+    <!-- <div class="container">
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="./assets/img/20181026_151706.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">A Empresa</h5>
+            <p class="card-text">Fundada em 2014, porém com profissionais atuando no mercado de Tecnologia da Informação
+              há mais de 20 anos, o Grupo Track é constituído pelas empresa Track Services e HackBit Tecnologia, estas
+              empresas são especializadas em prover soluções de tecnologia da informação aos nossos clientes em diversos
+              seguimentos. Nosso objetivo é viabilizar manutenção e suporte técnico continuamente em Tecnologia da
+              informação, além de implementar projetos de Tecnologia da informação com alta qualidade para empresas.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3">
+      <div class="row g-0">
+
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Nossa atuação</h5>
+            <p class="card-text">Nossa atuação vai de acordo com a necessidade do nosso cliente, já realizamos mais de
+              100 projetos no Brasil. Atuamos com experiência nos seguintes seguimentos:</p>
+            <p>Mercado de Petróleo e Gás OnShore e OffShore</p>
+            <p>Empresas de serviços da cadeia produtiva de P&G</p>
+            <p>Indústria Alimentícia</p>
+            <p>Rede de Hotelaria e condomínios</p>
+            <p>Laboratório e clínicas</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img src="./assets/img/Atuação.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+
+
+    <!-- <div class="d-flex justify-content-center align-items-center h-100">
+    <img src="./assets/img/Atuação.jpg" alt="" width="30%">
+  </div> -->
+
+
+
+    <!-- <div id="bgimg01"></div> -->
+
+    <!-- paineis -->
+    <div id="sobreGrid" class="row row-cols-1 row-cols-md-2 g-4 mx-5">
+      <div class="col">
+        <div class="card h-100">
+
+          <div class="card-body">
+            <h4>A Empresa</h4>
+            <p class="card-text">Fundada em 2014, porém com profissionais atuando no mercado de Tecnologia da Informação
+              há mais de 20 anos, o Grupo Track é constituído pelas empresa Track Services e HackBit Tecnologia, estas
+              empresas são especializadas em prover soluções de tecnologia da informação aos nossos clientes em diversos
+              seguimentos. Nosso objetivo é viabilizar manutenção e suporte técnico continuamente em Tecnologia da
+              informação, além de implementar projetos de Tecnologia da informação com alta qualidade para empresas.</p>
+            <p>A Track Services e a Hackbit trabalham com grandes parceiros e entende que relacionamentos duradouros com
+              seus clientes e fornecedores colaboram para incrementar seu grau de competitividade no mercado.</p>
+            <p>Com sede em Rio das Ostras, atuamos onde há demanda de nossos clientes, e temos uma equipe
+              multidisciplinar nos permitem atender a todas as empresas do nosso portfólio com a devida rapidez e
+              qualidade essenciais para operação do seu negócio.</p>
+            <p>
+              Visão – Conquistar e manter a confiança de clientes, sendo reconhecida como uma empresa diferenciada no
+              fornecimento dos Serviços de Tecnologia da Informação, através de um trabalho sério, ético e responsável.
+            </p>
+            <p>
+              Missão – Ser uma empresa apta a suprir a demanda do mercado em Tecnologia da Informação em todo o estado
+              do Rio de Janeiro até 2020.
+            </p>
+            <p>
+              Valores – Respeito aos nossos clientes e parceiros, compromisso com o bem estar dos nossos colaboradores,
+              trabalhando com ética, integridade, honestidade e credibilidade.
+            </p>
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img id="img01" src="./assets/img/20181026_151706.jpg" alt="" width="100%">
+
+
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 text-center">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <img src="./assets/img/Atuação.jpg" alt="" width="30%">
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+
+          <div class="card-body">
+            <h4>Nossa atuação</h4>
+            <p class="card-text">Nossa atuação vai de acordo com a necessidade do nosso cliente, já realizamos mais de
+              100 projetos no Brasil. Atuamos com experiência nos seguintes seguimentos:</p>
+            <p>Mercado de Petróleo e Gás OnShore e OffShore</p>
+            <p>Empresas de serviços da cadeia produtiva de P&G</p>
+            <p>Indústria Alimentícia</p>
+            <p>Rede de Hotelaria e condomínios</p>
+            <p>Laboratório e clínicas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Parceiros -->
+    <!-- <div class="d-flex">
+      <div class="p-4 flex-fill"><img src="./assets/img/parceiros/Lenovo-Logo.png" alt=""></div>
+      <div class="p-4 flex-fill"><img src="./assets/img/parceiros/Intelbras-verde-01.png" alt=""></div>
+      <div class="p-4 flex-fill"><img src="./assets/img/parceiros/office365-oie_transparent (25).png" alt=""></div>
+      <div class="p-4 flex-fill"><img src="./assets/img/parceiros/microsoft-logo.png" alt=""></div>
+
+    </div> -->
+    <!-- Lista de parceiros -->
+
+    <div class="fundoParceiros">
+      <div class="containerParceiros py-3">
+        <!-- <div class="parceirosItens"> -->
+        <img src="./assets/img/parceiros/microsoft-logo-png-2396.png" alt="">
+        <img src="./assets/img/parceiros/red-logo-png-1149.png" alt="">
+        <img src="./assets/img/parceiros/office365-oie_transparent (25).png" alt="">
+        <img src="./assets/img/parceiros/Intelbras-verde-01.png" alt="">
+        <img src="./assets/img/parceiros/Axis.gif" alt="">
+        <!-- <img src="./assets/img/parceiros/red-logo-png-1149.png" alt=""> -->
+        <!-- <img src="./assets/img/parceiros/office365-oie_transparent (25).png" alt=""> -->
+        <!-- <img src="./assets/img/parceiros/microsoft-logo.png" alt=""> -->
+        <!-- </div> -->
+      </div>
+
+      <div class="containerParceiros py-3">
+        <img src="./assets/img/parceiros/Bitdefender.png" alt="">
+        <img src="./assets/img/parceiros/cisco.jpg" alt="">
+        <img src="./assets/img/parceiros/download.png" alt="">
+        <img src="./assets/img/parceiros/Furukawa.jpg" alt="">
+      </div>
+    </div>
+
+
 
     <!-- Serviços -->
+
     <section id="servicos" class="pt-5 text-center container">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
@@ -347,7 +494,7 @@
       </div>
     </section>
 
-  
+
 
 
 
@@ -364,8 +511,7 @@
 
 
     <!-- Modal Serviços-->
-    <div class="modal fade" id="Modal-01" tabindex="-1" aria-labelledby="ModalLabel-01"
-      aria-hidden="true">
+    <div class="modal fade" id="Modal-01" tabindex="-1" aria-labelledby="ModalLabel-01" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-scrollable">
         <!-- testar "modal-dialog-centered" na linha acima!!!!!!!!!!!!!!!!!!!! -->
         <!-- testar modal-lg na linha acima   +  modal-fullscreen-sm-down modal-fullscreen-md-down modal-fullscreen-lg-down !!!!!!!!!!!!!!!!!!! -->
@@ -399,7 +545,7 @@
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
             <a href="./outsourcing.html" class="btn btn-primary" role="button">Mais detalhes</a>
 
-          
+
 
 
             <!-- <button type="button" class="btn btn-primary" href="outsourcing.html" target="_blank">Mais detalhes</button> -->
@@ -410,8 +556,8 @@
 
 
 
-    <a href="https://api.whatsapp.com/send?phone=5521989211938" target="_blank"
-    class="nav-link text-muted"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=5521989211938" target="_blank" class="nav-link text-muted"><i
+        class="fa-brands fa-whatsapp"></i></a>
 
 
 
@@ -444,68 +590,68 @@
         <!-- teste formulario -->
         <!-- TODO: Testar input abaixo + integrar com Mailchimp!!! -->
         <div class="row justify-content-center">
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- * * SB Forms Contact Form * *-->
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- This form is pre-integrated with SB Forms.-->
-            <!-- To make this form functional, sign up at-->
-            <!-- https://startbootstrap.com/solution/contact-forms-->
-            <!-- to get an API token!-->
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-              <!-- Name input-->
-              <div class="form-floating mb-3">
-                <input class="form-control" id="name" type="text" placeholder="Enter your name..."
-                  data-sb-validations="required" data-sb-can-submit="no">
-                <label for="name">Nome</label>
-                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+          <!-- * * * * * * * * * * * * * * *-->
+          <!-- * * SB Forms Contact Form * *-->
+          <!-- * * * * * * * * * * * * * * *-->
+          <!-- This form is pre-integrated with SB Forms.-->
+          <!-- To make this form functional, sign up at-->
+          <!-- https://startbootstrap.com/solution/contact-forms-->
+          <!-- to get an API token!-->
+          <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <!-- Name input-->
+            <div class="form-floating mb-3">
+              <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+                data-sb-validations="required" data-sb-can-submit="no">
+              <label for="name">Nome</label>
+              <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+            </div>
+            <!-- Email address input-->
+            <div class="form-floating mb-3">
+              <input class="form-control" id="email" type="email" placeholder="name@example.com"
+                data-sb-validations="required,email" data-sb-can-submit="no">
+              <label for="email">Endereço de E-mail</label>
+              <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+              <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+            </div>
+            <!-- Phone number input-->
+            <div class="form-floating mb-3">
+              <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                data-sb-validations="required" data-sb-can-submit="no">
+              <label for="phone">Telefone</label>
+              <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+            </div>
+            <!-- Message input-->
+            <div class="form-floating mb-3">
+              <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
+                style="height: 10rem" data-sb-validations="required" data-sb-can-submit="no"></textarea>
+              <label for="message">Mensagem</label>
+              <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+            </div>
+            <!-- Submit success message-->
+            <!---->
+            <!-- This is what your users will see when the form-->
+            <!-- has successfully submitted-->
+            <div class="d-none" id="submitSuccessMessage">
+              <div class="text-center mb-3">
+                <div class="fw-bolder">Form submission successful!</div>
+                To activate this form, sign up at
+                <br>
+                <a
+                  href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
               </div>
-              <!-- Email address input-->
-              <div class="form-floating mb-3">
-                <input class="form-control" id="email" type="email" placeholder="name@example.com"
-                  data-sb-validations="required,email" data-sb-can-submit="no">
-                <label for="email">Endereço de E-mail</label>
-                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-              </div>
-              <!-- Phone number input-->
-              <div class="form-floating mb-3">
-                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
-                  data-sb-validations="required" data-sb-can-submit="no">
-                <label for="phone">Telefone</label>
-                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-              </div>
-              <!-- Message input-->
-              <div class="form-floating mb-3">
-                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..."
-                  style="height: 10rem" data-sb-validations="required" data-sb-can-submit="no"></textarea>
-                <label for="message">Mensagem</label>
-                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-              </div>
-              <!-- Submit success message-->
-              <!---->
-              <!-- This is what your users will see when the form-->
-              <!-- has successfully submitted-->
-              <div class="d-none" id="submitSuccessMessage">
-                <div class="text-center mb-3">
-                  <div class="fw-bolder">Form submission successful!</div>
-                  To activate this form, sign up at
-                  <br>
-                  <a
-                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                </div>
-              </div>
-              <!-- Submit error message-->
-              <!---->
-              <!-- This is what your users will see when there is-->
-              <!-- an error submitting the form-->
-              <div class="d-none" id="submitErrorMessage">
-                <div class="text-center text-danger mb-3">Error sending message!</div>
-              </div>
-              <!-- Submit Button-->
-              <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton"
-                  type="submit">Enviar</button></div>
-                  <!-- TODO: botão final -->
-            </form>
+            </div>
+            <!-- Submit error message-->
+            <!---->
+            <!-- This is what your users will see when there is-->
+            <!-- an error submitting the form-->
+            <div class="d-none" id="submitErrorMessage">
+              <div class="text-center text-danger mb-3">Error sending message!</div>
+            </div>
+            <!-- Submit Button-->
+            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton"
+                type="submit">Enviar</button></div>
+            <!-- TODO: botão final -->
+          </form>
         </div>
         <!-- fim teste formulario -->
         <!-- <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p> -->
@@ -547,10 +693,10 @@
   <div class="container">
     <footer class="py-3 my-1">
       <ul class="nav justify-content-evenly border-bottom pb-3 mb-3">
-        <li class="ms-auto nav-item"><a href="https://www.facebook.com/trackservices" target="_blank" class="nav-link text-muted"><i
-              class="fa-brands fa-facebook-f"></i></a></li>
-        <li class="nav-item"><a href="https://www.instagram.com/trackservices/" target="_blank" class="nav-link text-muted"><i
-              class="fa-brands fa-instagram"></i></a></li>
+        <li class="ms-auto nav-item"><a href="https://www.facebook.com/trackservices" target="_blank"
+            class="nav-link text-muted"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li class="nav-item"><a href="https://www.instagram.com/trackservices/" target="_blank"
+            class="nav-link text-muted"><i class="fa-brands fa-instagram"></i></a></li>
         <li class="nav-item"><a href="mailto:strausswalter@gmail.com" target="_blank" class="nav-link text-muted"><i
               class="fa-solid fa-envelope"></i></a></li>
         <li class="me-auto nav-item"><a href="https://api.whatsapp.com/send?phone=5521989211938" target="_blank"

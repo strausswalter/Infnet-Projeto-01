@@ -20,11 +20,6 @@ body{
 } */
 
 
-
-
-
-
-
 #mainNav{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -38,29 +33,36 @@ body{
 
 #mainMenu ul li a{
     font-size: 1.5rem;
-    color: #fff;
+    font-weight: 500;
+    /* [disabled]color: #fff; */
 
 }
 
 #mainMenu ul li a:hover{
-    color: #00E676;
+    color: #EB1D23;
 }
 
 /* Navbar shrink */
 
 #mainNav.changeNavbar {
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+	/* Mudar a cor do navbar */
+	 /*     --bs-bg-opacity: 1;*/
+  /*   background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;*/
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }  
+
+#logo img{
+    /*Logo responsivo*/
+    max-width: 25vw;
+}
 
 
 
 /* Navbar Logo */
 /* Limitar o tamanho maximo da imagem do logo */
 nav img{
-    max-height: 30px;
+    /* [disabled]max-height: 60px; */
     position: relative;
     top: -1px; /* A imagem estava com texto desalinhada com o texto do menu */
 }
@@ -76,6 +78,53 @@ nav img{
     background-position: center top;
 	background-size:cover; */
 }
+
+/*Sobre*/
+#img01{
+
+  max-width: 100%;
+  height: auto;
+}
+
+/* #bgimg01{
+	background-image: url("../img/background/dataCenter_edited.jpg");
+	height: 50vh;
+} */
+
+/* Parceiros */
+
+.containerParceiros{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.containerParceiros img{
+  /* flex: 10%; */
+  height: 50px;
+}
+
+.fundoParceiros{
+  width: 100%;
+  margin: 10px auto;
+  /* border-top: 1px solid black;
+  border-bottom: 1px solid black; */
+
+  background-image: url(../img/background/pic01.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+
+/* o bootstrap foi mais responsivo ( class="p-4 flex-fill") */
+/* .containerParceiros img{
+  width: 5vw;
+} */
+
+
+
+
+
+
 
 /* Serviços */
 
@@ -101,6 +150,7 @@ section#contact {
     background-image: url("../img/map-image.png");
     background-repeat: no-repeat;
     background-position: center;
+    back
   }
   section#contact .section-heading {
     color: #fff;
@@ -167,6 +217,3 @@ footer i{
     text-shadow: 1px 0 0 rgb(255 255 255 / 50%), -1px 0 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(255 255 255 / 50%), 0 -1px 0 rgb(255 255 255 / 50%);
     padding: 0 15px;
 }
-
-
-
