@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-
 </head>
 
 <body>
@@ -24,7 +23,6 @@
   <!-- Nabbar -->
 
   <div class="container-fluid">
-
     <nav class="navbar navbar-expand-lg bg-light fixed-top" aria-label="Offcanvas navbar large" id="mainNav">
       <div class="container-xl">
         <div id="logo">
@@ -55,10 +53,16 @@
               <li class="nav-item">
                 <a class="nav-link" href="#contato">Contato</a>
               </li>
-              <li class="nav-item">
+
+              <!-- TODO: sistema para abrir chamado for do ar. Ativar após reparo. -->
+              <!-- <li class="nav-item">
                 <a class="nav-link btn btn-outline-light me-2 text-nowrap buttonAbrirCham"
                   href="http://trackservicedesk.dyndns.info/glpi/">Abrir chamado</a>
-              </li>
+              </li> -->
+
+
+
+
               <!-- Dropbown menu (para possiveis alterações futuras)-->
               <!-- <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -84,53 +88,61 @@
 
 
   <main>
-    <!-- Home / Banner statico-->
-    <!--   <section class="home">
-      <div>
-      </div>
-    </section>-->
-    <!-- fim Home / Banner statico-->
 
     <!-- Home / Banner Carousel-->
     <section>
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div id="BannerCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#BannerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#BannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#BannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#BannerCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#BannerCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="7000">
-            <img src="./assets/img/assistenciaTecnica.webp" class="d-block w-00" alt="...">
-            <div class="carousel-caption d-none d-md-block text-bg-light opacity-50 rounded-3">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="7000">
             <img src="./assets/img/Infra.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block text-bg-light opacity-50 rounded-3">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+            <div class="carousel-caption d-none d-md-block text-bg-light opacity-75 rounded-3">
+              <h2>Projetos de infraestrutura de TI</h2>
+              <p>Temos soluções completas de projetos de TI, desde cabeamento estruturado até implantação de Firewall e Servidores</p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="7000">
-            <img src="./assets/img/controleAcesso.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block text-bg-light opacity-50 rounded-3">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+            <img src="./assets/img/suporteExterno2.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-bg-light opacity-75 rounded-3">
+              <h2>Suporte / Outsourcing</h2>
+              <p>Contribuindo para a economia da aquisição e manutenção de soluções de TI</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="7000">
+            <img src="./assets/img/assistenciaTecnica.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-bg-light opacity-75 rounded-3">
+              <h2>Assistência Técnica</h2>
+              <p>Equipe qualificada para resolver seus problemas de microinformática</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="7000">
+            <img src="./assets/img/noc.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-bg-light opacity-75 rounded-3">
+              <h2>NOC - Network Operations Center</h2>
+              <p>Sua infraestrutura de TI monitorada por nossa equipe em tempo real, detectando e preveninco problemas de forma proativa</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="7000">
+            <img src="./assets/img/vendas.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-bg-light opacity-75 rounded-3">
+              <h2>Venda de equipamentos</h2>
+              <p>Trabalhamos com as principais marcas do mercado e com os maiores distribuidores do Brasil</p>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#BannerCarousel"
           data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        <button class="carousel-control-next" type="button" data-bs-target="#BannerCarousel"
           data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
@@ -139,25 +151,25 @@
     </section><!-- Fim Banner Carousel -->
 
     <!-- Sobre -->
+
     <section id="sobre" class="pt-5 text-center container">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">Sobre</h1>
-          <p class="lead text-muted">Alguns dos nossos serviços</p>
+          <h1>Sobre</h1>
+          <!-- <p class="lead text-muted">Alguns dos nossos serviços</p> -->
         </div>
       </div>
-    
-      
+
+    <!-- <section id="sobre" class="pt-lg-5 pb-lg-2 text-center container"> -->
         <div class="row" id="about-us">
           <div class="col-lg-6 order-lg-1 order-2">
             <div class="about-content wow right-animation" data-wow-delay="0.4s">
-              <h2 class="h2-title">A Empresa</h2>
-              <h3 class="h3-title">Track Services</h3>
+              <!-- <h2 class="h2">A Empresa</h2> -->
+              <p>Um pouco sobre a empresa</p>
+              <h3>TRACK <span>SERVICES</span></h3>
               <div class="about-text">
                 <p>A Track Services e a Hackbit trabalham com grandes parceiros e entende que relacionamentos duradouros com
-                  <p>Com sede em Rio das Ostras, a nossa atuação vai de acordo com a necessidade do nosso cliente, já realizamos mais de 100 projetos no Brasil. Atuamos com experiência nos seguintes seguimentos:
-
-                  </p>
+                  <p>Com sede em Rio das Ostras, a nossa atuação vai de acordo com a necessidade do nosso cliente, já realizamos mais de 100 projetos no Brasil. Atuamos com experiência nos seguintes seguimentos:</p>
               </div>
               <ul>
                 <li>Mercado de Petróleo e Gás OnShore e OffShore</li>
@@ -166,18 +178,17 @@
                 <li>Rede de Hotelaria e condomínios</li>
                 <li>Laboratório e clínicas</li>
               </ul>
-              <a href="about-us.html" class="sec-btn" title="Read More"><span>Read More</span></a>
+              <a href="about-us.html" class="sec-btn" title="Read More"><span>Saiba mais</span></a>
             </div>
           </div>
           <div class="col-lg-6 order-lg-2 order-1 wow left-animation" data-wow-delay="0.4s">
             <div class="about-img-box">
-              <div class="about-img img1 back-img" style="background-image: url('assets/img/about-img1.jpg');"></div>
-              <div class="about-img img2 back-img" style="background-image: url('assets/img/about-img2.jpg');"></div>
-              <div class="about-img img3 back-img" style="background-image: url('assets/img/about-img3.jpg');"></div>
+              <div class="about-img img1 back-img" style="background-image: url('assets/img/sobre01.jpg');" width="400px" height="400px"></div>
+              <div class="about-img img2 back-img" style="background-image: url('assets/img/cabeamento.jpeg');"></div>
+              <div class="about-img img3 back-img" style="background-image: url('assets/img/Atuação.jpg');"></div>
             </div>
           </div>
         </div>
-      
     </section>
 
 
@@ -216,47 +227,29 @@
     <section id="servicos" class="pt-5 text-center container">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">Serviços</h1>
+          <h1>Serviços</h1>
           <p class="lead text-muted">Alguns dos nossos serviços</p>
         </div>
       </div>
-    </section>
 
-    <!-- Cards -->
-    <section>
-      <div class="row row-cols-1 row-cols-md-3 g-4 mx-5">
+    <!-- Serviços - Cards -->
+    
+      <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
-            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                dy=".3em">Image
-                cap</text>
-            </svg> -->
-            <img src="./assets/img/OutsourcingTrackServices.jpeg" alt="" width="100%" data-bs-toggle="modal"
-              data-bs-target="#Modal-01">
+            <img src="./assets/img/OutsourcingTrackServices.jpeg" alt="" width="100%" data-bs-toggle="modal" data-bs-target="#Modal-01">
             <div class="card-body">
               <h4>Outsourcing de TI</h4>
               <p class="card-text">Terceirização de TI é estratégia vantajosa para sua empresa aumentar a
                 produtividade,
                 otimizar o desempenho, agilizar processos e elevar a qualidade dos serviços prestados por uma empresa.
                 Atendimento local com suporte de TI integral.</p>
-
             </div>
-
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                dy=".3em">Image
-                cap</text>
-            </svg>
-
+            <img src="./assets/img/servicos/suporteTecnico.jpg" alt="" width="100%" data-bs-toggle="modal" data-bs-target="#Modal-02">
             <div class="card-body">
               <h4>Suporte Técnico</h4>
               <p class="card-text">Suporte técnico é responsabilidade do departamento de TI em manter a estabilidade
@@ -270,14 +263,7 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                dy=".3em">Image
-                cap</text>
-            </svg>
-
+            <img src="./assets/img/servicos/asssitenciaTecnica.jpg" alt="" width="100%" data-bs-toggle="modal" data-bs-target="#Modal-03">
             <div class="card-body">
               <h4>Assistência Técnica</h4>
               <p class="card-text">Realizamos manutenção preventiva e corretiva em servidores, micro computadores e
@@ -291,14 +277,7 @@
 
         <div class="col">
           <div class="card h-100">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                dy=".3em">Image
-                cap</text>
-            </svg>
-
+            <img src="./assets/img/servicos/dataCenter.jpg" alt="" width="100%" data-bs-toggle="modal" data-bs-target="#Modal-04">
             <div class="card-body">
               <h4>Data Center e Servidores</h4>
               <p class="card-text">A infraestrutura de TI consiste nos componentes e serviços que fornecem a base para
@@ -310,14 +289,7 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                dy=".3em">Image
-                cap</text>
-            </svg>
-
+            <img src="./assets/img/servicos/pontoEletronico.jpg" alt="" width="100%" data-bs-toggle="modal" data-bs-target="#Modal-05">
             <div class="card-body">
               <h4>Controle de Ponto Eletrônico</h4>
               <p class="card-text">Relógios de ponto eletrônico homologado pelo MTE e certificado pelo modelos, com
@@ -329,14 +301,7 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                dy=".3em">Image
-                cap</text>
-            </svg>
-
+            <img src="./assets/img/servicos/ControleAcesso.jpg" alt="" width="100%" data-bs-toggle="modal" data-bs-target="#Modal-06">
             <div class="card-body">
               <h4>Controle de Acesso</h4>
               <p class="card-text">As catracas unem beleza e tecnologia para o controle de acesso a locais como
@@ -349,14 +314,7 @@
 
         <div class="col">
           <div class="card h-100">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                dy=".3em">Image
-                cap</text>
-            </svg>
-
+            <img src="./assets/img/servicos/cftv.jpg" alt="" width="100%" data-bs-toggle="modal" data-bs-target="#Modal-07">
             <div class="card-body">
               <h4>Câmeras de Segurança - CFTV</h4>
               <p class="card-text">Os projetos de câmeras de segurança são utilizados para monitoramento e vigilância,
@@ -368,13 +326,7 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                dy=".3em">Image
-                cap</text>
-            </svg>
+            <img src="./assets/img/servicos/noc.jpg" alt="" width="100%" data-bs-toggle="modal" data-bs-target="#Modal-08">
 
             <div class="card-body">
               <h4>Monitoramento NOC</h4>
@@ -387,13 +339,7 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
-                dy=".3em">Image
-                cap</text>
-            </svg>
+            <img src="./assets/img/servicos/venda.jpg" alt="" width="100%" data-bs-toggle="modal" data-bs-target="#Modal-09">
 
             <div class="card-body">
               <h4>Venda de equipamentos</h4>
@@ -423,26 +369,15 @@
 
 
 
-    <!-- Modal Serviços-->
+    <!-- Serviços - Modal -->
     <div class="modal fade" id="Modal-01" tabindex="-1" aria-labelledby="ModalLabel-01" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-scrollable">
-        <!-- testar "modal-dialog-centered" na linha acima!!!!!!!!!!!!!!!!!!!! -->
-        <!-- testar modal-lg na linha acima   +  modal-fullscreen-sm-down modal-fullscreen-md-down modal-fullscreen-lg-down !!!!!!!!!!!!!!!!!!! -->
         <div class="modal-content">
           <div class="modal-body">
             <h5 class="modal-title" id="ModalLabel-01"></h5>
             <div class="card h-100">
               <img src="./assets/img/OutsourcingTrackServices.jpeg" alt="" width="100%" data-bs-toggle="modal"
                 data-bs-target="#Modal-01">
-
-
-              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image
-              cap</text>
-          </svg> -->
-
               <div class="card-body">
                 <h4>Outsourcing de TI</h4>
                 <p class="card-text">Terceirização de TI é estratégia vantajosa para sua empresa aumentar a
@@ -450,48 +385,258 @@
                   otimizar o desempenho, agilizar processos e elevar a qualidade dos serviços prestados por uma
                   empresa.
                   Atendimento local com suporte de TI integral.</p>
-
               </div>
-
             </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-            <a href="./outsourcing.html" class="btn btn-primary" role="button">Mais detalhes</a>
-
-
-
-
+            
+            <!-- Para no futuro acrescentar botão "Mais detalhes" para abrir outra página -->
+            <!-- <a href="./outsourcing.html" class="btn btn-primary" role="button">Mais detalhes</a> -->
             <!-- <button type="button" class="btn btn-primary" href="outsourcing.html" target="_blank">Mais detalhes</button> -->
+          
           </div>
         </div>
       </div>
     </div>
 
+    <div class="modal fade" id="Modal-02" tabindex="-1" aria-labelledby="ModalLabel-02" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5 class="modal-title" id="ModalLabel-02"></h5>
+            <div class="card h-100">
+              <img src="./assets/img/servicos/suporteTecnico.jpg" alt="" width="100%" data-bs-toggle="modal"
+                data-bs-target="#Modal-02">
+              <div class="card-body">
+                <h4>Suporte Técnico</h4>
+                <p class="card-text">Suporte técnico é responsabilidade do departamento de TI em manter a estabilidade
+                  dos
+                  serviços prestados, oferecendo apoio, esclarecimentos, manutenções preventivas e corretivas remota e
+                  presencial. Temos vários planos que se adaptam as necessidades dos clientes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            
+            <!-- Para no futuro acrescentar botão "Mais detalhes" para abrir outra página -->
+            <!-- <a href="./outsourcing.html" class="btn btn-primary" role="button">Mais detalhes</a> -->
+            <!-- <button type="button" class="btn btn-primary" href="outsourcing.html" target="_blank">Mais detalhes</button> -->
+          
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="modal fade" id="Modal-03" tabindex="-1" aria-labelledby="ModalLabel-03" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5 class="modal-title" id="ModalLabel-03"></h5>
+            <div class="card h-100">
+              <img src="./assets/img/servicos/asssitenciaTecnica.jpg" alt="" width="100%" data-bs-toggle="modal"
+                data-bs-target="#Modal-03">
+              <div class="card-body">
+                <h4>Assistência Técnica</h4>
+                <p class="card-text">Realizamos manutenção preventiva e corretiva em servidores, micro computadores e
+                  notebooks e equipamentos de informática em geral, contamos com uma equipe de profissionais
+                  qualificados
+                  para resolver seus problemas de microinformatica.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            
+            <!-- Para no futuro acrescentar botão "Mais detalhes" para abrir outra página -->
+            <!-- <a href="./outsourcing.html" class="btn btn-primary" role="button">Mais detalhes</a> -->
+            <!-- <button type="button" class="btn btn-primary" href="outsourcing.html" target="_blank">Mais detalhes</button> -->
+          
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- <a href="https://api.whatsapp.com/send?phone=5521989211938" target="_blank" class="nav-link text-muted"><i
-          class="fa-brands fa-whatsapp"></i></a> -->
+    <div class="modal fade" id="Modal-04" tabindex="-1" aria-labelledby="ModalLabel-04" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5 class="modal-title" id="ModalLabel-04"></h5>
+            <div class="card h-100">
+              <img src="./assets/img/servicos/dataCenter.jpg" alt="" width="100%" data-bs-toggle="modal"
+                data-bs-target="#Modal-04">
+              <div class="card-body">
+                <h4>Data Center e Servidores</h4>
+                <p class="card-text">A infraestrutura de TI consiste nos componentes e serviços que fornecem a base para
+                  sustentar todos os sistemas de informação de uma organização. Temos soluções completas de projetos de
+                  TI, desde cabeamento estruturado até implantação de Firewall e Servidores.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            
+            <!-- Para no futuro acrescentar botão "Mais detalhes" para abrir outra página -->
+            <!-- <a href="./outsourcing.html" class="btn btn-primary" role="button">Mais detalhes</a> -->
+            <!-- <button type="button" class="btn btn-primary" href="outsourcing.html" target="_blank">Mais detalhes</button> -->
+          
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="modal fade" id="Modal-05" tabindex="-1" aria-labelledby="ModalLabel-05" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5 class="modal-title" id="ModalLabel-05"></h5>
+            <div class="card h-100">
+              <img src="./assets/img/servicos/pontoEletronico.jpg" alt="" width="100%" data-bs-toggle="modal"
+                data-bs-target="#Modal-05">
+              <div class="card-body">
+                <h4>Controle de Ponto Eletrônico</h4>
+                <p class="card-text">Relógios de ponto eletrônico homologado pelo MTE e certificado pelo modelos, com
+                  diferentes combinações de leitores tela touch screen, possui diversos recursos e possibilidades de
+                  configuração. Aplicando-se a empresas de todos os portes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            
+            <!-- Para no futuro acrescentar botão "Mais detalhes" para abrir outra página -->
+            <!-- <a href="./outsourcing.html" class="btn btn-primary" role="button">Mais detalhes</a> -->
+            <!-- <button type="button" class="btn btn-primary" href="outsourcing.html" target="_blank">Mais detalhes</button> -->
+          
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="modal fade" id="Modal-06" tabindex="-1" aria-labelledby="ModalLabel-06" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5 class="modal-title" id="ModalLabel-06"></h5>
+            <div class="card h-100">
+              <img src="./assets/img/servicos/ControleAcesso.jpg" alt="" width="100%" data-bs-toggle="modal"
+                data-bs-target="#Modal-06">
+              <div class="card-body">
+                <h4>Controle de Acesso</h4>
+                <p class="card-text">As catracas unem beleza e tecnologia para o controle de acesso a locais como
+                  recepções e portarias. Ela pode ser customizada de acordo com a necessidade do cliente e cada projeto,
+                  sendo possível escolher o tipo de leitor de identificação e adicionar cofre coletor de cartões.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            
+            <!-- Para no futuro acrescentar botão "Mais detalhes" para abrir outra página -->
+            <!-- <a href="./outsourcing.html" class="btn btn-primary" role="button">Mais detalhes</a> -->
+            <!-- <button type="button" class="btn btn-primary" href="outsourcing.html" target="_blank">Mais detalhes</button> -->
+          
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="modal fade" id="Modal-07" tabindex="-1" aria-labelledby="ModalLabel-07" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5 class="modal-title" id="ModalLabel-07"></h5>
+            <div class="card h-100">
+              <img src="./assets/img/servicos/cftv.jpg" alt="" width="100%" data-bs-toggle="modal"
+                data-bs-target="#Modal-07">
+              <div class="card-body">
+                <h4>Câmeras de Segurança - CFTV</h4>
+                <p class="card-text">Os projetos de câmeras de segurança são utilizados para monitoramento e vigilância,
+                  visando incidentes de segurança, vandalismo, acessos aos escritórios, fábricas, residencias,
+                  condomínios e empresas o comportamento indevido e outras ocorrências.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            
+            <!-- Para no futuro acrescentar botão "Mais detalhes" para abrir outra página -->
+            <!-- <a href="./outsourcing.html" class="btn btn-primary" role="button">Mais detalhes</a> -->
+            <!-- <button type="button" class="btn btn-primary" href="outsourcing.html" target="_blank">Mais detalhes</button> -->
+          
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-    <!-- ================================================================== -->
-
+    <div class="modal fade" id="Modal-08" tabindex="-1" aria-labelledby="ModalLabel-08" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5 class="modal-title" id="ModalLabel-08"></h5>
+            <div class="card h-100">
+              <img src="./assets/img/servicos/noc.jpg" alt="" width="100%" data-bs-toggle="modal"
+                data-bs-target="#Modal-08">
+              <div class="card-body">
+                <h4>Monitoramento NOC</h4>
+                <p class="card-text">Sua infraestrutura de TI monitorada por nossa equipe em tempo real, permitindo a
+                  ação proativa diante de eventuais falhas. Redução gradativa dos custos com pessoal e infraestrutura,
+                  além disso sua empresa conta com um suporte e atendimento dedicado.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            
+            <!-- Para no futuro acrescentar botão "Mais detalhes" para abrir outra página -->
+            <!-- <a href="./outsourcing.html" class="btn btn-primary" role="button">Mais detalhes</a> -->
+            <!-- <button type="button" class="btn btn-primary" href="outsourcing.html" target="_blank">Mais detalhes</button> -->
+          
+          </div>
+        </div>
+      </div>
+    </div>
 
   </main>
 
+  <div class="modal fade" id="Modal-09" tabindex="-1" aria-labelledby="ModalLabel-09" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h5 class="modal-title" id="ModalLabel-09"></h5>
+          <div class="card h-100">
+            <img src="./assets/img/servicos/venda.jpg" alt="" width="100%" data-bs-toggle="modal"
+              data-bs-target="#Modal-09">
+            <div class="card-body">
+              <h4>Venda de equipamentos</h4>
+              <p class="card-text">Trabalhamos com as principais marcas do mercado e com os maiores distribuidores do
+                Brasil, revendemos equipamentos com garantia e ainda instalamos em sua empresa. Entre em contato com
+                nosso departamento comercial e consulte nossas condições.</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          
+          <!-- Para no futuro acrescentar botão "Mais detalhes" para abrir outra página -->
+          <!-- <a href="./outsourcing.html" class="btn btn-primary" role="button">Mais detalhes</a> -->
+          <!-- <button type="button" class="btn btn-primary" href="outsourcing.html" target="_blank">Mais detalhes</button> -->
+        
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
 
 
   <!-- Contact-->
-  <section id="contato" class="pt-5 text-center container">
+  <section id="contato" class="pt-lg-5 pb-lg-2 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Contato</h1>
+        <h1>Contato</h1>
         <!-- <p class="lead text-muted">Envie a sua mensagem</p> -->
       </div>
     </div>

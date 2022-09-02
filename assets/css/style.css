@@ -1,15 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+/* Fontes */
+/* Archivo Black: fonte similar ao logo da empresa TrackServices */
+/* Quicksand:wght: */
+/* Source+Sans+Pro:wght: usado nos titulos */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@700&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
 
 
-@import url('medias.css');
+
 
 body{
     --bs-bg-opacity: 1;
     /* background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important; */
-    font-family: "Quicksand", sans-serif;
-    /* font-size: 62.5%; */
-    /* font-size: 10px; */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+
+
+    /* Fonte similar ao da empresa Trackservices */
+    /* font-family: 'Archivo Black', sans-serif; */
 }
+
+h1{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.5rem;
+}
+
+
 
 /* Spinner */
 /* #spinner {
@@ -23,10 +37,6 @@ body{
 #mainNav{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    /* background-color: #ced4da; */
-    /* TODO: retirar o fundo preto após inserir o carousel no home */
-
-    /* transition: padding-top 0.3s, padding-bottom 0.3s; */
     -webkit-transition: all 1.0s ease;
     transition: all 1.0s ease;
 }
@@ -34,8 +44,6 @@ body{
 #mainMenu ul li a{
     font-size: 1.5rem;
     font-weight: 500;
-    /* [disabled]color: #fff; */
-
 }
 
 #mainMenu ul li a:hover{
@@ -68,6 +76,10 @@ nav img{
 }
 
 
+/* Carousel */
+
+
+
 
 /* Home Section */
 
@@ -81,23 +93,31 @@ nav img{
 
 /*Sobre*/
 
+
 #about-us{
   text-align: left;
 }
 
 
-
 .main-about-us {
   position: relative;
-  padding: 115px 0 120px 0;
+  /* padding: 115px 0 120px 0; */
 }
 
 .about-content {
   padding-top: 6px;
 }
 
-.about-content .h3-title {
+.about-content h3 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 2.0rem;
+  /* color: black; */
+
+
+}
+.about-content h3 span {
   color: #EB1D23;
+
 }
 
 .about-text {
@@ -135,6 +155,59 @@ nav img{
   font-size: 15px;
 }
 
+a, a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.sec-btn {
+  height: 60px;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 15px 32px;
+  background: linear-gradient(to right, #4faa84, #5dbe96);
+  border-radius: 40px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+.sec-btn:hover {
+  color: #ffffff;
+  box-shadow: 0px 10px 30px 0px rgb(93 190 150 / 30%);
+}
+
+/* Animação do botão */
+.sec-btn span {
+  position: relative;
+  z-index: 1;
+}
+.sec-btn:hover:before {
+  left: 0;
+}
+.sec-btn:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(0,-50%);
+  width: 105%;
+  height: 105%;
+  background: linear-gradient(to left, #4faa84, #5dbe96);
+  border-radius: 40px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+
+
 .about-img-box {
   position: relative;
   width: 660px;
@@ -144,12 +217,24 @@ nav img{
 .about-img {
   width: 385px;
   height: 385px;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 20px;
   box-shadow: 1px 1px 60px rgba(0,0,0,0.1);
   position: relative;
   animation: movedelement2 10s linear infinite;
   z-index: 0;
+
 }
+.about-img.img1{
+ 
+  
+
+  
+}
+
+
+
 
 .about-img.img2 {
   width: 230px;
@@ -244,10 +329,29 @@ nav img{
 
 
 
-
-
-
 /* Serviços */
+
+/* #servicos .card img{
+  width: 310px;
+  height: 310px;
+} */
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* PORTFOLIO */
@@ -338,3 +442,9 @@ footer i{
     text-shadow: 1px 0 0 rgb(255 255 255 / 50%), -1px 0 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(255 255 255 / 50%), 0 -1px 0 rgb(255 255 255 / 50%);
     padding: 0 15px;
 }
+
+
+/*----------------------------------------------
+Media Queries
+----------------------------------------------*/
+

@@ -57,6 +57,24 @@ Media Queries
     }
 
 }
+/*Para Dispositivos de 575px ou menos*/
+
+@media screen and (max-width: 575px){
+.about-img-box {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    margin: unset;
+}
+.about-img {
+    width: 220px;
+    height: 220px;
+}
+}
+
 
 /*Para Dispositivos de 480px ou menos*/
 @media screen and (max-width: 480px){
