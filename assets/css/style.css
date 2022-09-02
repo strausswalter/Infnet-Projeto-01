@@ -80,16 +80,137 @@ nav img{
 }
 
 /*Sobre*/
-#img01{
 
-  max-width: 100%;
-  height: auto;
+#about-us{
+  text-align: left;
 }
 
-/* #bgimg01{
-	background-image: url("../img/background/dataCenter_edited.jpg");
-	height: 50vh;
-} */
+
+
+.main-about-us {
+  position: relative;
+  padding: 115px 0 120px 0;
+}
+
+.about-content {
+  padding-top: 6px;
+}
+
+.about-content .h3-title {
+  color: #EB1D23;
+}
+
+.about-text {
+  margin-bottom: 18px;
+}
+
+.about-content ul {
+  margin-bottom: 33px;
+  list-style: none;
+}
+
+
+.about-content ul li {
+  color: #010f2e;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 17px;
+}
+
+.about-content ul li:before {
+  content: "\f00c";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0,-50%);
+  width: 30px;
+  height: 30px;
+  background: #497cff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: 'FontAwesome';
+  font-size: 15px;
+}
+
+.about-img-box {
+  position: relative;
+  width: 660px;
+  height: 580px;
+}
+
+.about-img {
+  width: 385px;
+  height: 385px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 60px rgba(0,0,0,0.1);
+  position: relative;
+  animation: movedelement2 10s linear infinite;
+  z-index: 0;
+}
+
+.about-img.img2 {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: 95px;
+  right: 0;
+  animation: movedelement2 5s linear infinite;
+  z-index: 5;
+}
+
+.about-img.img3 {
+  width: 310px;
+  height: 310px;
+  position: absolute;
+  bottom: 0;
+  right: 140px;
+  animation: movedelement2 8s linear infinite;
+  z-index: 2;
+}
+
+
+@keyframes movedelement2 {
+  0% {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+  }
+  25% {
+      -webkit-transform: translate(10px, 10px);
+      transform: translate(10px, 10px);
+  }
+  50% {
+      -webkit-transform: translate(5px, 5px);
+      transform: translate(5px, 5px);
+  }
+  75% {
+      -webkit-transform: translate(10px, -5px);
+      transform: translate(10px, -5px);
+  }
+  to {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+  }
+}
+
+
+.main-about-us .sec-shape .shape1 {
+  top: 125px;
+  left: -165px;
+}
+
+.main-about-us .sec-shape .shape2 {
+  bottom: 115px;
+  right: -10px;
+}
+
+
+
+
+
+
 
 /* Parceiros */
 
@@ -109,7 +230,7 @@ nav img{
   /* border-top: 1px solid black;
   border-bottom: 1px solid black; */
 
-  background-image: url(../img/background/pic01.jpg);
+  /* background-image: url(../img/background/pic01.jpg); */
   background-repeat: no-repeat;
   background-size:cover;
 }
