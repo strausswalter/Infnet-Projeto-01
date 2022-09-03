@@ -37,18 +37,11 @@ h1 {
 
 #logo img {
   /*Logo responsivo*/
-  max-width: 25vw;
-}
-
-.navbarPrincipal{
-  background-color: #4faa84;
+  max-width: 18vw;
 }
 
 
-
-
-
-#mainNav {
+#mainMenu {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   -webkit-transition: all 1.0s ease;
@@ -66,7 +59,7 @@ h1 {
 
 /* Navbar shrink */
 
-#mainNav.changeNavbar {
+#mainMenu.changeNavbar {
   /* Mudar a cor do navbar */
   /*     --bs-bg-opacity: 1;*/
   /*   background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;*/
@@ -475,3 +468,28 @@ footer i {
 /*----------------------------------------------
 Media Queries
 ----------------------------------------------*/
+/* Retirado do site do Bootstrap: https://getbootstrap.com/docs/5.2/layout/breakpoints/ */
+/* Mas adaptado para not-mobile-first */
+
+ /* X-Small devices (portrait phones, less than 576px) */
+ /* No media query for `xs` since this is the default in Bootstrap */
+
+ /* XX-Large devices (larger desktops, 1400px and down) */
+@media (max-width: 1400px) { ... }
+
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { ... }
+
+
+ /* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { ... }
+
+
+ /* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { ... }
+
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { ... }
+
