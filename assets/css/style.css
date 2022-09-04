@@ -50,7 +50,7 @@ h1 {
 
 #mainMenu ul li a {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 #mainMenu ul li a:hover {
@@ -308,25 +308,42 @@ a:focus {
 
 /* Parceiros */
 
-.containerParceiros {
+.fundoParceiros ul {
   display: flex;
+  /* flex-wrap: wrap; */
+  gap: 2vw;
   justify-content: center;
-  gap: 50px;
+  align-items: baseline;
+  list-style: none;
 }
 
-.containerParceiros img {
-  /* flex: 10%; */
-  height: 50px;
+.fundoParceiros li {
+  height: 5vh;
+  flex-grow: 1;
 }
+
+.fundoParceiros img {
+  max-height: 100%;
+  /* min-width: 100%; */
+  object-fit: cover;
+  /* vertical-align: bottom; */
+}
+.fundoParceiros li:last-child {
+  /* flex-grow: 10; */
+}
+
 
 .fundoParceiros {
   width: 100%;
-  margin: 10px auto;
+  margin: 20px auto;
   background-repeat: no-repeat;
   background-size: cover;
   border-top: 1px solid #EEE;
   border-bottom: 1px solid #EEE;
-}
+} 
+
+
+
 
 
 /* o bootstrap foi mais responsivo ( class="p-4 flex-fill") */
@@ -378,17 +395,17 @@ a:focus {
 
 /* Contato */
 
-section#contact {
+/* section#contact {
   background-color: #212529;
   background-image: url("../img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
-  back
-}
+  
+} */
 
-section#contact .section-heading {
+/* section#contact .section-heading {
   color: #fff;
-}
+} */
 
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
@@ -475,21 +492,161 @@ Media Queries
  /* No media query for `xs` since this is the default in Bootstrap */
 
  /* XX-Large devices (larger desktops, 1400px and down) */
-@media (max-width: 1400px) { ... }
+@media (max-width: 1400px) { }
 
+
+
+
+@media screen and (max-width: 1279px) {
+
+  /* Sobre imagens */
+  .about-img-box {
+    width: 600px;
+}
+.about-img {
+    width: 360px;
+    height: 360px;
+}
+.about-img.img2 {
+    width: 200px;
+    height: 200px;
+}
+.about-img.img3 {
+    width: 300px;
+    height: 300px;
+}
+
+/* Parceiros - altura das imagens */
+.fundoParceiros li {
+  height: 4vh;
+}
+}
 
  /* X-Large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) { ... }
+@media (max-width: 1200px) { 
+
+  /* Sobre imagens */
+  .about-img-box {
+    width: 550px;
+}
+.about-img {
+    width: 320px;
+}
+.about-img.img3 {
+    width: 270px;
+    right: 110px;
+}
+/* Parceiros - altura das imagens */
+.fundoParceiros li {
+  height: 3vh;
+}
+ }
 
 
  /* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) { ... }
+@media (max-width: 992px) {  
 
 
+
+  /* Sobre imagens */
+.about-img-box {
+  width: 100%;
+}
+.about-img {
+  width: 360px;
+}
+.about-img.img2 {
+  width: 250px;
+  height: 250px;
+}
+.about-img.img3 {
+  width: 300px;
+  right: 140px;
+}
+
+/* Contato */
+/* Espaçamento entre os 2 box de contatos */
+#contactBox{
+  margin: 10px 0;
+}
+}
  /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) { ... }
+@media (max-width: 768px) { 
 
+    /* Sobre imagens */
+  .about-img-box {
+    height: 510px;
+}
+.about-img {
+    width: 300px;
+    height: 300px;
+}
+.about-img.img2 {
+    width: 180px;
+    height: 180px;
+}
+.about-img.img3 {
+    width: 250px;
+    height: 250px;
+}
+ }
 
  /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) { ... }
+@media (max-width: 576px) { 
+
+    /* Sobre imagens */
+  .about-img-box {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    margin: unset;
+}
+.about-img {
+    width: 220px;
+    height: 220px;
+}
+.about-img.img2 {
+    width: 150px;
+    height: 150px;
+}
+.about-img.img3 {
+    width: 200px;
+    height: 200px;
+}
+/* Parceiros - altura das imagens */
+.fundoParceiros li {
+  height: 2vh;
+}
+ }
+
+ @media screen and (max-width: 400px) {
+
+
+  /* Sobre imagens */
+  .about-img-box {
+    width: 290px;
+    height: 290px;
+}
+.about-img {
+    width: 180px;
+    height: 180px;
+}
+.about-img.img2 {
+    width: 100px;
+    height: 100px;
+}
+.about-img.img3 {
+    width: 150px;
+    height: 150px;
+    right: 70px;
+}
+/* Parceiros - altura das imagens */
+.fundoParceiros li {
+  height: 1.5vh;
+}
+ }
+
 
