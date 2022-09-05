@@ -16,13 +16,12 @@
   <!-- Spinner Start -->
   <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
       <div class="spinner-grow text-primary" role="status"></div>
-  </div> -->
-  <!-- Spinner End -->
+  </div> -->  <!-- Spinner End  -->
 
 
   <!-- Navbar -->
   <header>
-    <nav class="navbar navbar-expand-md bg-white fixed-top container-md" id="mainMenu">
+    <nav class="navbar navbar-expand-sm bg-white fixed-top container-md" id="mainMenu">
       
         <div id="logo">
           <a class="navbar-brand" href="#"><img src="./assets/img/logo.webp" alt=""></a>
@@ -32,8 +31,9 @@
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><h3>TRACK <span>SERVICES</span></h3></h5>
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" id="btn-close-maior"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -58,7 +58,7 @@
 
   <main>
     <!-- Home / Banner Carousel-->
-    <section class="container-md">
+    <section class="container-md" id="containerBanner">
       <div id="BannerCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#BannerCarousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -71,7 +71,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="7000">
             <img src="./assets/img/Infra.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block text-bg-light opacity-75 rounded-3">
+            <div class="carousel-caption text-bg-light opacity-75 rounded-3">
               <h2>Projetos de infraestrutura de TI</h2>
               <p>Temos soluções completas de projetos de TI, desde cabeamento estruturado até implantação de Firewall e
                 Servidores</p>
@@ -79,21 +79,21 @@
           </div>
           <div class="carousel-item" data-bs-interval="7000">
             <img src="./assets/img/suporteExterno2.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block text-bg-light opacity-75 rounded-3">
+            <div class="carousel-caption text-bg-light opacity-75 rounded-3">
               <h2>Suporte / Outsourcing</h2>
               <p>Contribuindo para a economia da aquisição e manutenção de soluções de TI</p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="7000">
             <img src="./assets/img/assistenciaTecnica.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block text-bg-light opacity-75 rounded-3">
+            <div class="carousel-caption text-bg-light opacity-75 rounded-3">
               <h2>Assistência Técnica</h2>
               <p>Equipe qualificada para resolver seus problemas de microinformática</p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="7000">
             <img src="./assets/img/noc.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block text-bg-light opacity-75 rounded-3">
+            <div class="carousel-caption text-bg-light opacity-75 rounded-3">
               <h2>NOC - Network Operations Center</h2>
               <p>Sua infraestrutura de TI monitorada por nossa equipe em tempo real, detectando e preveninco problemas
                 de forma proativa</p>
@@ -101,7 +101,7 @@
           </div>
           <div class="carousel-item" data-bs-interval="7000">
             <img src="./assets/img/vendas.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block text-bg-light opacity-75 rounded-3">
+            <div class="carousel-caption text-bg-light opacity-75 rounded-3">
               <h2>Venda de equipamentos</h2>
               <p>Trabalhamos com as principais marcas do mercado e com os maiores distribuidores do Brasil</p>
             </div>
@@ -158,7 +158,7 @@
             <div class="about-img img1 back-img" style="background-image: url('assets/img/sobre01.jpg');" width="400px"
               height="400px"></div>
             <div class="about-img img2 back-img" style="background-image: url('assets/img/cabeamento.jpeg');"></div>
-            <div class="about-img img3 back-img" style="background-image: url('assets/img/Atuação.jpg');"></div>
+            <div class="about-img img3 back-img" style="background-image: url('assets/img/mapaBrasil.jpg');"></div>
           </div>
         </div>
       </div>
