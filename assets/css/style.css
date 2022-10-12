@@ -118,6 +118,12 @@ h1 {
   margin-bottom: 17px;
 }
 
+.about-content ul li:hover {
+  animation: pulse;
+  animation-duration: 2s; 
+}
+
+
 .about-content ul li:before {
   content: "\f00c";
   position: absolute;
