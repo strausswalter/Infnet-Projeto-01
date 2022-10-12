@@ -93,6 +93,11 @@ h1 {
   font-size: 2.0rem;
 }
 
+.about-content h3:hover {
+  animation: pulse;
+  animation-duration: 2s; 
+}
+
 .about-content h3 span {
   color: #EB1D23!important;
 }
@@ -121,7 +126,7 @@ h1 {
   transform: translate(0, -50%);
   width: 30px;
   height: 30px;
-  background: #497cff;
+  background: #EB1D23;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -147,7 +152,7 @@ a:focus {
   font-weight: 500;
   text-transform: uppercase;
   padding: 15px 32px;
-  background: linear-gradient(to right, #4faa84, #5dbe96);
+  background: linear-gradient(to right, rgb(235, 29, 35), rgb(219, 67, 72));
   border-radius: 40px;
   overflow: hidden;
   text-align: center;
@@ -159,7 +164,7 @@ a:focus {
 
 .sec-btn:hover {
   color: #ffffff;
-  box-shadow: 0px 10px 30px 0px rgb(93 190 150 / 30%);
+  box-shadow: 0px 10px 30px 0px rgba(235, 29, 35, 0.3);
 }
 
 /* Animação do botão */
@@ -180,7 +185,7 @@ a:focus {
   transform: translate(0, -50%);
   width: 105%;
   height: 105%;
-  background: linear-gradient(to left, #4faa84, #5dbe96);
+  background: linear-gradient(to left, #EB1D23, #ec5c61);
   border-radius: 40px;
   transition: 0.5s;
   z-index: 0;
